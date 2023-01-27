@@ -1,0 +1,587 @@
+
+
+*{
+	font-family: 'Muli', sans-serif;
+}
+body{
+	margin: 0;
+	border: 0;
+  background-image: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+:root {
+    --primary : linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    --secondary : linear-gradient(90deg, #1CB5E0 0%, #000851 100%);;
+    --text : #fff;
+}
+
+
+
+/* Navigation Bar Start */
+.topnav {
+  background-color: #3175DE;
+  overflow: hidden;
+
+  
+}
+
+.navbar-token{
+  margin-bottom: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.navbar-item{
+  float: right;
+  display: block;
+  color: #000000;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 80%;
+  border-radius: 30px;
+  margin-top: 2%;
+  margin-right: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.coin_img{
+  width: 20px;
+  margin-left: 10px;
+}
+
+.navbar-token{
+  margin-top: 2px;
+}
+
+
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  text-align: center;
+  padding: 2.3% 5%;
+  font-size: 200%;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+#logout{
+
+  display: none;
+
+}
+
+#logout-btn{
+  background: linear-gradient(45deg,  #2A265F,  #67639b);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+
+@media screen and (max-width: 860px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+
+
+  .navbar-item{
+  display: block; 
+  font-size: 80%;
+  border-radius: 30px;
+  margin-top: 3%;
+  margin-right: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+  .coin_img{
+  width: 18px;
+  margin-left: 5px;
+}
+
+  
+}
+
+@media screen and (max-width: 500px) {
+.navbar-item{
+  display: block; 
+  font-size: 40%;
+  border-radius: 30px;
+  margin-top: 4%;
+  margin-right: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+  .coin_img{
+  width: 13px;
+  margin-left: 5px;
+}
+
+
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 860px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+      
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+
+  .topnav.responsive .navbar-item{
+      display: none;
+  }
+  .topnav.responsive #logout{
+      display: block;
+  }
+
+  .topnav.responsive .navbar-links_container-item  {
+      
+      padding: 14px 50px;
+      
+    }
+
+  .topnav.responsive #logout-btn{
+      margin-bottom: 10%;
+      text-align: center;
+      
+  }
+
+  .topnav.responsive #logout{
+      margin-bottom: 5%;
+      padding-top: 5%;
+      
+      
+  }
+}
+
+
+/* Navigation Bar End */
+
+
+.container {
+    width: 95%;
+    margin: 5% 2.5%;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.left-column, .right-column{
+    width: 45%;
+    height: 30%;
+}
+
+
+.left-column{
+    margin-right: 5%;
+}
+
+.dividing-line{
+    display: none;
+}
+
+.main-video, .video-playlist {
+    width: 100%;
+    height: 30rem;
+}
+
+.main-video .title {
+    margin-top: 1rem;
+    
+}
+
+.video-title{
+    padding-left: 0;
+}
+
+.video-playlist .title {
+    padding-left: 1rem;
+}
+
+.video-playlist > p {
+    padding: 1rem;
+    color: var(--secondary);
+}
+
+.video-playlist .videos{
+    height: 70%;
+    overflow-y: auto;
+}
+
+.video-playlist .videos::-webkit-scrollbar {
+    width: .4rem;
+    border-radius: .4rem;
+    background-color: #0005;
+}
+
+.video-playlist .videos::-webkit-scrollbar-thumb {
+    border-radius: .4rem;
+    background-color: #fff;
+}
+
+.video-playlist .videos .video {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 1rem;
+    margin-top: .1rem;
+    cursor: pointer;
+
+    border-radius: .5rem;
+}
+
+.video-playlist .videos .video:hover {
+    background-color: #0003;
+}
+
+.video-playlist .videos .video.active {
+    background-color: #0003;
+    color: var(--secondary);
+}
+
+.main-video video {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.video img {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 1.5rem;
+    height: 1.5rem;
+    
+    filter: invert(100%);
+}
+
+.video-playlist .videos .video.active img {
+    filter: invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
+}
+
+.video p {
+   margin-left: 2.5rem;
+}
+
+.video h3 {
+    width: 23rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font: 100 1rem 'Poppins' 'sans-serif';
+    padding: 0 .5rem;
+}
+
+.button {
+    font-size: 25px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+    margin-top: 2%;
+  }
+  .button:active {
+    transform: scale(0.96);
+  }
+  .button:before,
+  .button:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  .button.animate::before {
+    top: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+  }
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  .button.animate::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+  }
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .left-column, .right-column{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .left-column{
+        max-height: 500px;
+    }
+
+    .videos {
+        font-size: 10px;
+    }
+    
+    .dividing-line{
+        display: block;
+    }
+    
+  
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .left-column, .right-column{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .left-column{
+        max-height: 330px;
+    }
+    .videos *{
+        font-size: 20px;
+    }
+    
+    .dividing-line{
+        display: block;
+    }
+    
+  
+    
+  }
+
+
+
+/* Footer */
+#footer {
+	margin-top:10% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #3175DE;
+    padding-left: 20px;
+	padding-bottom: 3%;
+    padding-top: 3%;
+    color: white;
+
+}
+
+.footer-btn-container{
+    display: flex;
+    flex-direction: row;
+}
+.footer-heading {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 3rem;
+}
+
+.footer-heading h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    padding: 1rem;
+    border: 1px solid #fff;
+    text-align: center;
+
+    margin-bottom: 10rem;
+    cursor: pointer;
+}
+
+.footer-btn p {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    word-spacing: 2px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+    text-align: left;
+}
+
+.footer-links div {
+    width: 250px;
+    margin: 1rem;
+}
+
+.footer-links_logo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-links_logo img {
+    width: 118px;
+    height: 30px;
+
+    margin-bottom: 1rem;
+}
+
+.footer-links_logo p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+
+.footer-links_div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.footer-links_div h4 {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: var(--font-family);
+    color: #fff;
+
+    margin-bottom: 0.9rem;
+}
+
+.footer-links_div p {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: var(--font-family);
+    color: #fff;
+
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.footer-copyright {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-copyright p {
+    font-size: 12px;
+    font-family: var(--font-family);
+    line-height: 15px;
+    color: #fff;
+}
+/* Footer End */

@@ -1,0 +1,40 @@
+[{
+    "id": 1,
+    "title": "all about interests",
+    "type": "Your Courses"
+},
+{
+    "id": 2,
+    "title": "understanding financial risks",
+    "type": "Your Courses"
+},
+{
+    "id": 3,
+    "title": "different types of banks",
+    "type": "Popular"
+},
+{
+    "id": 4,
+    "title": "all about interests",
+    "type": "Recommendation"
+},
+{
+    "id": 5,
+    "title": "banking tips from rhb",
+    "type": "Recommendation"
+},
+{
+    "id": 6,
+    "title": "digital banking with rhb",
+    "type": "Popular"
+},
+{
+    "id": 7,
+    "title": "how to set financial targets?",
+    "type": "Recommendation"
+},
+{
+    "id": 8,
+    "title": "what you should know about financial literacy?",
+    "type": "Popular"
+}]

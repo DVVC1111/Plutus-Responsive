@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plutus</title>
+    <link rel="stylesheet" href="lesson1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script type="text/javascript" src="../navbar.js"></script>
+  </head>
+  <body>
+
+    <!-- NavBar Begin -->
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html" class="active">Plutus</a>
+      <a class="navbar-links_container-item" href="../index.html">Topic</a>
+      <a class="navbar-links_container-item" href="../podcast/podcast.html">Materials</a>
+      <a class="navbar-links_container-item" href="../redeem/redeem.html">Redeem</a>
+      <a class="navbar-links_container-item" href="../piggybank/piggybank.html">Saving</a>
+      <a class="navbar-links_container-item" id="logout"><span id="logout-btn">Log Out</span></a>
+
+      <a href="javascript:void(0);" class="icon" onclick="navBar()">
+        <i class="fa fa-bars" style="padding: 10px;"></i>
+      </a>
+
+
+      <div class="navbar-item">
+          <p class="navbar-token">1690</p>
+          
+          <div class="coin.img"><img src="../img/coin.png" class="coin_img"></div>
+      </div>
+      <div class="navbar-item account"> 
+          
+          <p class="navbar-token account-name">David Vicheth</p>
+          
+          <div class="coin.img account-img"><img src="../img/user.png" class="coin_img"></div>
+      
+      </div>
+         
+    </div>
+
+  <!-- NavBar End -->
+
+
+
+    <!-- body -->
+
+    <div class="container">
+      <div class="left-column">
+        <section class="main-video">
+          <video src="videos/Vid1.mp4" controls autoplay muted></video>
+          <h3 class="title">How To Make A Foreign Telegraphic Transfer.</h3>
+          <hr class="dividing-line">
+        </section>
+      </div>
+
+
+      <div class="right-column">
+        <section class="video-playlist">
+          <h3 class="title video-title" style="padding-left: 0px;" >Mastering RHB Online Banking</h3>
+          <p>3 skills &nbsp; . &nbsp; 3m 31s</p>
+          <div class="videos">
+
+          </div>
+          <button class="button"><a href="../quiz/quiz.html">Take a quiz</a></button>
+        </section>
+      </div>
+      
+
+      
+      <script>
+      const button = document.querySelector(".button");
+
+      button.addEventListener("click", (e) => {
+          e.preventDefault;
+          button.classList.add("animate");
+          setTimeout(() => {
+          button.classList.remove("animate");
+          }, 600);
+      });
+      </script>
+   </div>
+
+
+   <!-- body end -->
+
+   <!-- footer -->
+        <!-- Footer -->
+        <div class="footer section__padding" id="footer">
+        
+          <div class="footer-links">
+            <div class="footer-links_logo">
+              <h1>Plutus</h1>
+              <h6> <br />By RHB</h6>
+            </div>
+            <div class="footer-links_div">
+              <h4>Social Media</h4>
+              <p>Facebook: Plutus</p>
+              <p>Instagram: @plutus</p>
+              <p>Twitter: @plutus</p>
+            </div>
+            <div class="footer-links_div">
+              <h4>Plutus</h4>
+              <p>Terms & Conditions </p>
+              <p>Privacy Policy</p>
+              <p>Contact</p>
+            </div>
+            <div class="footer-links_div">
+              <h4>Get in touch</h4>
+              <p>Plutus Head Office : Dubai, UAE </p>
+              <p>(+168)012 800 800 012 801</p>
+              <p>support@plutus.com</p>
+            </div>
+          </div>
+      
+          <div class="footer-copyright">
+            <p>@2023 Plutus by RHB. All rights reserved.</p>
+          </div>
+        </div>
+      <!-- Footer -->
+  
+  
+      <!-- footer end -->
+	<script src="script.js"></script>
+  </body>
+</html>

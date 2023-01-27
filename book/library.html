@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Library</title>
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/library.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../navbar.js"></script>
+</head>
+
+<body id="top">
+
+  <!-- NavBar Begin -->
+  <div class="topnav" id="myTopnav">
+    <a href="../index.html" class="active">Plutus</a>
+    <a class="navbar-links_container-item" href="../index.html">Topic</a>
+    <a class="navbar-links_container-item" href="../podcast/podcast.html">Materials</a>
+    <a class="navbar-links_container-item" href="../redeem/redeem.html">Redeem</a>
+    <a class="navbar-links_container-item" href="../piggybank/piggybank.html">Saving</a>
+    <a class="navbar-links_container-item" id="logout"><span id="logout-btn">Log Out</span></a>
+
+    <a href="javascript:void(0);" class="icon" onclick="navBar()">
+      <i class="fa fa-bars" style="padding: 10px;"></i>
+    </a>
+
+
+    <div class="navbar-item">
+        <p class="navbar-token">1690</p>
+        
+        <div class="coin.img"><img src="../img/coin.png" class="coin_img"></div>
+    </div>
+    <div class="navbar-item account"> 
+        
+        <p class="navbar-token account-name">David Vicheth</p>
+        
+        <div class="coin.img account-img"><img src="../img/user.png" class="coin_img"></div>
+    
+    </div>
+       
+  </div>
+
+<!-- NavBar End -->
+
+<div class="mini-navbar">
+  <div class="mini-items-container">
+      <div class="podcast mini-items"><a href="../podcast/podcast.html">Podcast</a></div>
+      <div class="book mini-items"><a href="../book/library.html">Book</a></div>
+  </div>
+  
+</div>
+  
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <!-- <section class="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Challenge of the month</p>
+
+            <h1 class="h1 hero-title">
+              Participate in our <strong>Book Challenge</strong>, To Earn Rewards
+            </h1>
+
+
+            <button class="btn btn-primary">
+              <ion-icon name="book"></ion-icon>
+
+              <span>Read now</span>
+            </button>
+
+          </div>
+
+        </div>
+      </section> -->
+
+
+
+
+
+      <!-- 
+        - #UPCOMING
+      -->
+
+      <section class="upcoming">
+        <div class="container">
+
+          <div class="flex-wrapper">
+
+            <div class="title-wrapper">
+              <p class="section-subtitle">Online Reading</p>
+
+              <h2 class="h2 section-title">Upcoming Books</h2>
+            </div>
+
+            <ul class="filter-list">
+
+              <li>
+                <button class="filter-btn">Investing</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">Saving</button>
+              </li>
+
+              <li>
+                <button class="filter-btn">General</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="movies-list  has-scrollbar">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-1.png" alt="The Northman movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">AKTIEN KAUFEN</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT137M">137 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.5</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-2.png"
+                      alt="Doctor Strange in the Multiverse of Madness movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">Money Mind Crush</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT126M">126 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-3.png" alt="Memory movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">The Bottle Budget</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="">N/A</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/upcoming-4.png"
+                      alt="The Unbearable Weight of Massive Talent movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">Moneyfesto</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT107M">107 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>NR</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service">
+        <div class="container">
+
+          <div class="service-banner">
+            <figure>
+              <img src="./assets/images/service-banner.jpg" alt="HD 4k resolution! only $3.99">
+            </figure>
+
+            <a href="./assets/images/service-banner.jpg" download class="service-btn">
+              <span>Download</span>
+
+              <ion-icon name="download-outline"></ion-icon>
+            </a>
+          </div>
+
+          <div class="service-content">
+
+            <p class="service-subtitle">Our Digital Library</p>
+
+            <h2 class="h2 service-title">Download the Books and Read Online</h2>
+
+            <p class="service-text">
+              Rich Dad Poor Dad is a 1997 book written by Robert T. Kiyosaki and Sharon Lechter. It advocates the importance of financial literacy, financial independence and building wealth through investing in assets, real estate investing, starting and owning businesses, as well as increasing one's financial intelligence.
+            </p>
+
+            <ul class="service-list">
+
+              <li>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="tv"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Read on your own devices</h3>
+
+                    <p class="card-text">
+                      Fully available on your devices. You can read on your computer, smart phone, tablet, everything and everywhere.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="musical-note"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Listen to audio book</h3>
+
+                    <p class="card-text">
+                      You can listen to audio book if you are lazy to read. The audio is clear and we make sure you get all the information while on the go.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOP RATED
+      -->
+
+      <section class="top-rated">
+        <div class="container">
+
+          <p class="section-subtitle">Online Reading</p>
+
+          <h2 class="h2 section-title">Top Rated Books</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn">Investing</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Saving</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Wealth Building</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Real Estate</button>
+            </li>
+
+          </ul>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-1.png" alt="Sonic the Hedgehog 2 movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">The Fruits of Graft</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT122M">122 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-2.png" alt="Morbius movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">The Rishest Man in the Babylon</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT104M">104 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>5.9</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-3.png" alt="The Adam Project movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">CashCow Kids</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT106M">106 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.0</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-4.png" alt="Free Guy movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">Marketing Revolution</h3>
+                  </a>
+
+                  <time datetime="2021">2021</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT115M">115 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.7</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-5.png" alt="The Batman movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">Harder Working Money</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT176M">176 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.9</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-6.png" alt="Uncharted movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">Straight Talk on Your Money</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT116M">116 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.0</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-7.png" alt="Death on the Nile movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">Debt</h3>
+                  </a>
+
+                  <time datetime="2022">2021</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT127M">127 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>6.5</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-8.png" alt="The King's Man movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">Dividend Investing Made Easy</h3>
+                  </a>
+
+                  <time datetime="2021">2021</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT131M">131 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>7.0</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TV SERIES
+      -->
+
+      <section class="tv-series">
+        <div class="container">
+
+          <p class="section-subtitle">Best Book of All Times</p>
+
+          <h2 class="h2 section-title">Investment Series</h2>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-1.png" alt="Moon Knight movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">Money People Death</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT47M">47 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.6</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-2.png" alt="Halo movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">The Capital Market System</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-3.png" alt="Vikings: Valhalla movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">POM Principle </h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT51M">51 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./book-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-4.png" alt="Money Heist movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./book-details.html">
+                    <h3 class="card-title">Creedit After Brankrupcy</h3>
+                  </a>
+
+                  <time datetime="2017">2017</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">PDF</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 pages</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <!-- <section class="cta">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="cta-title">Read 2 Books For Free</h2>
+
+            <p class="cta-text">
+              Enter your email to get the books
+            </p>
+          </div>
+
+          <form action="" class="cta-form">
+            <input type="email" name="email" required placeholder="Enter your email" class="email-field">
+
+            <button type="submit" class="cta-form-btn">Get started</button>
+          </form>
+
+        </div>
+      </section> -->
+
+    </article>
+  </main>
+
+
+   <!-- Footer -->
+   <div class="footer section__padding" id="footer">
+        
+    <div class="footer-links">
+      <div class="footer-links_logo">
+        <h1>Plutus</h1>
+        <h6> <br />By RHB</h6>
+      </div>
+      <div class="footer-links_div">
+        <h4>Social Media</h4>
+        <p>Facebook: Plutus</p>
+        <p>Instagram: @plutus</p>
+        <p>Twitter: @plutus</p>
+      </div>
+      <div class="footer-links_div">
+        <h4>Plutus</h4>
+        <p>Terms & Conditions </p>
+        <p>Privacy Policy</p>
+        <p>Contact</p>
+      </div>
+      <div class="footer-links_div">
+        <h4>Get in touch</h4>
+        <p>Plutus Head Office : Dubai, UAE </p>
+        <p>(+168)012 800 800 012 801</p>
+        <p>support@plutus.com</p>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p>@2023 Plutus by RHB. All rights reserved.</p>
+    </div>
+  </div>
+<!-- Footer -->
+
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

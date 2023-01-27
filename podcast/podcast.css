@@ -1,0 +1,490 @@
+@import
+url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+	font-family: 'Muli', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+body{
+	margin: 0;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+/* Navigation Bar Start */
+.topnav {
+    background-color: #3175DE;
+    overflow: hidden;
+
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .navbar-item{
+    float: right;
+    display: block;
+    color: #000000;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 80%;
+    border-radius: 30px;
+    margin-top: 2%;
+    margin-right: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .coin_img{
+    width: 20px;
+    margin-left: 10px;
+  }
+
+  .navbar-token{
+    margin-top: 2px;
+  }
+
+
+  
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: black;
+
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    text-align: center;
+    padding: 2.3% 5%;
+    font-size: 200%;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+
+  #logout{
+  
+    display: none;
+
+  }
+
+  #logout-btn{
+    background: linear-gradient(45deg,  #2A265F,  #67639b);
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+
+  @media screen and (max-width: 860px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+
+    .navbar-item{
+    display: block; 
+    font-size: 80%;
+    border-radius: 30px;
+    margin-top: 3%;
+    margin-right: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+  
+  }
+
+    .coin_img{
+    width: 18px;
+    margin-left: 5px;
+  }
+
+    
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-item{
+    display: block; 
+    font-size: 40%;
+    border-radius: 30px;
+    margin-top: 4%;
+    margin-right: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+  
+  }
+
+    .coin_img{
+    width: 13px;
+    margin-left: 5px;
+  }
+
+
+  
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 860px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .navbar-item{
+        display: none;
+    }
+    .topnav.responsive #logout{
+        display: block;
+    }
+
+    .topnav.responsive .navbar-links_container-item  {
+        
+        padding: 14px 50px;
+        
+      }
+
+    .topnav.responsive #logout-btn{
+        margin-bottom: 10%;
+        text-align: center;
+        
+    }
+
+    .topnav.responsive #logout{
+        margin-bottom: 5%;
+        padding-top: 5%;
+        
+        
+    }
+}
+
+
+/* Navigation Bar End */
+
+
+
+
+
+
+
+#title{
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 40px;
+}
+
+.mini-items-container{
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 30px;
+
+
+    
+
+    
+  }
+
+.mini-navbar{
+	padding: 1% 1%;
+	margin: 0 0.1rem;
+	cursor: pointer;
+  }
+
+.mini-items{
+    margin: 2% 10%;
+    font-size: larger;
+    padding: 1% 2%;
+    width: 50%;
+    margin: 1%;
+    text-align: center;
+    border-radius: 30px;
+   
+}
+
+.mini-items a{
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    
+}
+
+.podcast{
+    background-color: #3175DE;
+    
+    
+
+}
+.podcast a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+#footer {
+	margin-top:10% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #3175DE;
+    padding-left: 20px;
+	padding-bottom: 3%;
+    padding-top: 3%;
+    color: white;
+
+}
+
+.footer-btn-container{
+    display: flex;
+    flex-direction: row;
+}
+.footer-heading {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 3rem;
+}
+
+.footer-heading h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    padding: 1rem;
+    border: 1px solid #fff;
+    text-align: center;
+
+    margin-bottom: 10rem;
+    cursor: pointer;
+}
+
+.footer-btn p {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    word-spacing: 2px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+    text-align: left;
+}
+
+.footer-links div {
+    width: 250px;
+    margin: 1rem;
+}
+
+.footer-links_logo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-links_logo img {
+    width: 118px;
+    height: 30px;
+
+    margin-bottom: 1rem;
+}
+
+.footer-links_logo p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+
+.footer-links_div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.footer-links_div h4 {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: var(--font-family);
+    color: #fff;
+
+    margin-bottom: 0.9rem;
+}
+
+.footer-links_div p {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: var(--font-family);
+    color: #fff;
+
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.footer-copyright {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-copyright p {
+    font-size: 12px;
+    font-family: var(--font-family);
+    line-height: 15px;
+    color: #fff;
+}
+/* Footer End */
+
+h1{
+
+}
+
+
+
+
+
+.row{
+    display: flex;
+    padding: 30px 15px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.box{
+    max-width: 320px;
+    margin: 40px auto;
+    border: 1px solid #ececed;
+    border-radius: 25px;
+    padding: 10px 15px;
+    color: #87878c;
+    background: white;
+}
+.box img{
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+}
+.box_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.box_top .left img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+.box_bottom{
+    padding: 20px 10px;
+}
+.box_bottom h2{
+    margin: 10px 0;
+    color: #000;
+}
+.box_bottom li{
+    display: inline;
+}
+.box_bottom li::before{
+    content: "\2022";
+    color: #94b0fc;
+    margin: 8px ;
+}
+.box_bottom .right{
+    color: #2960f8;
+    float: right;
+    margin-top: -34px;
+    border: 3px solid #2960f8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+.box_bottom .right i{
+    top: 15px;
+    left: 17px;
+    position: absolute;
+}
+.button1{
+    font-size: 20px;
+    margin: 5px auto 60px;
+    width: 180px;
+    background: #2960f8;
+    color: #fff;
+    display: block;
+    padding: 20px;
+    border: 0;
+    border-radius: 30px;
+}

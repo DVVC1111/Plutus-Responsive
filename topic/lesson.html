@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7b4d754c48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lesson.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- NavBar Begin -->
+    <section>
+      <div class="navbar">
+        <div class="navbar-links">
+          <div class="navbar-links_logo">
+            <h1><a href="/home.html">Plutus</a></h1>
+          </div>
+          <div class="navbar-links_container">
+            <h4 class="navbar-links_container-item"><a href="lesson.html">Learning</a></h4>
+            <!-- <h4 class="navbar-links_container-item"><a href="">Achievement</a></h4> -->
+            <h4 class="navbar-links_container-item"><a href="/redeem/redeem.html">Redeem</a></h4>
+            <h4 class="navbar-links_container-item"><a href="/podcast/podcast.html">Podcast</a></h4>
+          </div>
+        </div>
+        <div class="navbar-sign">
+            <div class="current-score">
+                <p class="current-score-amount">11602 Points</p>
+                <img src="/img/coin.png" class="reward-coin">
+            </div>
+            <a><button type="button">Log Out</button></a>
+        </div>
+        
+      </div>
+    </section>
+    <!-- NavBar End -->
+
+
+
+    <!-- Body Begin -->
+    <section class="body_wrap">
+        <div class="search_wrap">
+            <div class="search_course" style="display: flex; flex-direction: row; display: flex;">
+                <input type="text" class="form-control" id="search" course-search  placeholder="Search course name"style="width: 100%; height: 7vh; border-radius: 10px;">
+            </div>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="width: 14vw; height: 7vh; border-radius: 10px; background-color: #3175DE; font-size: 1rem; border: none;" >
+                  Course Types
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuLink" style="width: 14vw; border-radius: 0 0px 15px 15px; font-size: small;">
+                  <li><a class="dropdown-item" href="#">Your Courses</a></li>
+                  <li><a class="dropdown-item" href="#">Recommended Courses</a></li>
+                  <li><a class="dropdown-item" href="#">Popular Courses</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="course_wrap" style="margin-left: 5%; margin-right: 5%;">
+            <h3 class="text-danger mt-5 text-center" id="para"></h3>
+            <div class="row mt-3" id="card">
+            </div>
+        </div>  -->
+        <div class="course-cards" course-card-container></div>
+        <div class="course_grid" course-data-template>
+          <div class="row row-cols-2">
+          <div class="courseCard">
+              <div class="course" id="1">
+              <div class="course-preview">
+                  <h6>Flashcard Session 324</h6>
+                  <h2 class="title" data-title>All about Interests</h2>
+              </div>
+              <div class="course-info">
+                  <h6>Description</h6>
+                  <p class="description-text">learn more about the stock market and develop skills that you can use to
+                      grow your wealth. Whether you’ve never invested a dollar or are already 
+                      an experienced investor, an online investing course can help you to learn 
+                      how to make the right financial moves and plan for your future.</p>
+                  <div class="reward">
+                      <p class="reward-amount">69 Points</p>
+                      <img src="/img/coin.png">
+                  </div>
+                  <button class="button">View Course</button>
+              </div>
+            </div>
+          </div>
+          <div class="courseCard">
+            <div class="course" id="2">
+              <div class="course-preview">
+                  <h6>Flashcard Session 324</h6>
+                  <h2 class="title" data-title>Set Your Financial Goals</h2>
+              </div>
+              <div class="course-info">
+                  <h6>Description</h6>
+                  <p class="description-text">learn more about the stock market and develop skills that you can use to
+                      grow your wealth. Whether you’ve never invested a dollar or are already 
+                      an experienced investor, an online investing course can help you to learn 
+                      how to make the right financial moves and plan for your future.</p>
+                  <div class="reward">
+                      <p class="reward-amount">85 Points</p>
+                      <img src="/img/coin.png">
+                  </div>
+                  <button class="button">View Course</button>
+              </div>
+            </div>
+          </div>
+          <div class="courseCard">
+            <div class="course" id="3">
+              <div class="course-preview">
+                  <h6>Flashcard Session 324</h6>
+                  <h2 class="title" data-title>Different Types of Banks</h2>
+              </div>
+              <div class="course-info">
+                  <h6>Description</h6>
+                  <p class="description-text">learn more about the stock market and develop skills that you can use to
+                      grow your wealth. Whether you’ve never invested a dollar or are already 
+                      an experienced investor, an online investing course can help you to learn 
+                      how to make the right financial moves and plan for your future.</p>
+                  <div class="reward">
+                      <p class="reward-amount">85 Points</p>
+                      <img src="/img/coin.png">
+                  </div>
+                  <button class="button">View Course</button>
+              </div>
+            </div>
+          </div>
+          <div class="courseCard">
+            <div class="course" id="4">
+              <div class="course-preview">
+                  <h6>Video Session 324</h6>
+                  <h2 class="title" data-title>Learn about Financial Risks</h2>
+              </div>
+              <div class="course-info">
+                  <h6>Description</h6>
+                  <p class="description-text">learn more about the stock market and develop skills that you can use to
+                      grow your wealth. Whether you’ve never invested a dollar or are already 
+                      an experienced investor, an online investing course can help you to learn 
+                      how to make the right financial moves and plan for your future.</p>
+                  <div class="reward">
+                      <p class="reward-amount">85 Points</p>
+                      <img src="/img/coin.png">
+                  </div>
+                  <button class="button">View Course</button>
+              </div>
+            </div>
+          </div>
+            
+            
+          <!-- </div>
+          <div class="right_grid"> -->
+          <div class="courseCard">
+            <div class="course" id="5">
+              <div class="course-preview">
+                  <h6>Flashcard Session 324</h6>
+                  <h2 class="title" data-title>Banking Tips from RHB</h2>
+              </div>
+              <div class="course-info">
+                  <h6>Description</h6>
+                  <p class="description-text">learn more about the stock market and develop skills that you can use to
+                      grow your wealth. Whether you’ve never invested a dollar or are already 
+                      an experienced investor, an online investing course can help you to learn 
+                      how to make the right financial moves and plan for your future.</p>
+                  <div class="reward">
+                      <p class="reward-amount">50 Points</p>
+                      <img src="/img/coin.png">
+                  </div>
+                  <button class="button">View Course</button>
+              </div>
+            </div>
+          </div>
+          <div class="courseCard">
+            <div class="course" id="6">
+              <div class="course-preview">
+                  <h6>Video Session 324</h6>
+                  <h2 class="title" data-title>Digital Banking with RHB</h2>
+              </div>
+              <div class="course-info">
+                  <h6>Description</h6>
+                  <p class="description-text">learn more about the stock market and develop skills that you can use to
+                      grow your wealth. Whether you’ve never invested a dollar or are already 
+                      an experienced investor, an online investing course can help you to learn 
+                      how to make the right financial moves and plan for your future.</p>
+                  <div class="reward">
+                      <p class="reward-amount">90 Points</p>
+                      <img src="/img/coin.png">
+                  </div>
+                  <button class="button">View Course</button>
+              </div>
+            </div>
+          </div>
+          <div class="courseCard">
+            <div class="course" id="7">
+              <div class="course-preview">
+                  <h6>Flashcard Session 324</h6>
+                  <h2 class="title" data-title>All about Interests</h2>
+              </div>
+              <div class="course-info">
+                  <h6>Description</h6>
+                  <p class="description-text">learn more about the stock market and develop skills that you can use to
+                      grow your wealth. Whether you’ve never invested a dollar or are already 
+                      an experienced investor, an online investing course can help you to learn 
+                      how to make the right financial moves and plan for your future.</p>
+                  <div class="reward">
+                      <p class="reward-amount">85 Points</p>
+                      <img src="/img/coin.png">
+                  </div>
+                  <button class="button">View Course</button>
+              </div>
+            </div>
+          </div>
+          <div class="courseCard">
+            <div class="course" id="8">
+              <div class="course-preview">
+                  <h6>Flashcard Session 324</h6>
+                  <h2 class="title" data-title>All about Interests</h2>
+              </div>
+              <div class="course-info">
+                  <h6>Description</h6>
+                  <p class="description-text">learn more about the stock market and develop skills that you can use to
+                      grow your wealth. Whether you’ve never invested a dollar or are already 
+                      an experienced investor, an online investing course can help you to learn 
+                      how to make the right financial moves and plan for your future.</p>
+                  <div class="reward">
+                      <p class="reward-amount">85 Points</p>
+                      <img src="/img/coin.png">
+                  </div>
+                  <button class="button">View Course</button>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+        </div>
+    </section>
+<!-- Body End     -->
+    
+
+<!-- Footer Begin -->
+    <section>
+        <div class="footer section__padding" id="footer">
+        
+            <div class="footer-links">
+              <div class="footer-links_logo">
+                <h1>Plutus</h1>
+                <h6> <br />By RHB</h6>
+              </div>
+              <div class="footer-links_div">
+                <h4>Social Media</h4>
+                <p>Facebook: Plutus</p>
+                <p>Instagram: @plutus</p>
+                <p>Twitter: @plutus</p>
+              </div>
+              <div class="footer-links_div">
+                <h4>Plutus</h4>
+                <p>Terms & Conditions </p>
+                <p>Privacy Policy</p>
+                <p>Contact</p>
+              </div>
+              <div class="footer-links_div">
+                <h4>Get in touch</h4>
+                <p>Plutus Head Office : Dubai, UAE </p>
+                <p>(+168)012 800 800 012 801</p>
+                <p>support@plutus.com</p>
+              </div>
+            </div>
+        
+            <div class="footer-copyright">
+              <p>@2023 Plutus by RHB. All rights reserved.</p>
+            </div>
+          </div>
+    </section>
+<!-- Footer End -->
+      
+    
+
+    <script src="lesson.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
