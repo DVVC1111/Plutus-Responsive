@@ -1,109 +1,202 @@
 @import
-url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *{
 	font-family: 'Muli', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
 }
+#title{
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 40px;
+}
+
+
 body{
-	margin: 0;
-	border: 0;
-	background-image: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    margin: 0;
+    background-image: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
 
-/* navigation  */
-a{
-    text-decoration: none;
-    color: white;
-}
-.topup{
-    margin-right: 10%;
+/* Navigation Bar Start */
+.topnav {
+    background-color: #3175DE;
+    overflow: hidden;
+
     
-}
-.topup-menu{
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
     display: block;
-    margin-bottom: 10%;
-    white-space: nowrap;
+    color: #f2f2f2;
     text-align: center;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-	background-color: #3175DE;
-    padding: 0.5rem 6rem;
-	margin-bottom: 4%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
 
-}
-.navbar-links {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.navbar-links_logo {
-    margin-right: 2rem;
-    height: 100%;
-	color: #fff;
-}
-.navbar-links_logo img {
-    width: 30%;
-}
-.navbar-links_container {
+  .navbar-item{
+    float: right;
+    display: block;
+    color: #000000;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 80%;
+    border-radius: 30px;
+    margin-top: 2%;
+    margin-right: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    margin-right: 5%;
-}
-.navbar-sign {
+  }
+
+  .coin_img{
+    width: 20px;
+    margin-left: 10px;
+  }
+
+  .navbar-token{
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+
+
+  
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: black;
+
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    text-align: center;
+    padding: 2.3% 5%;
+    font-size: 200%;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+
+  #logout{
+  
+    display: none;
+
+  }
+
+  #logout-btn{
+    background: linear-gradient(45deg,  #2A265F,  #67639b);
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  @media screen and (max-width: 860px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+
+    .navbar-item{
+    display: block; 
+    font-size: 80%;
+    border-radius: 30px;
+    margin-top: 3%;
+    margin-right: 10px;
+    padding: 5px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: row;
+  
+  }
+
+    .coin_img{
+    width: 18px;
+    margin-left: 5px;
+  }
+
     
 }
-.navbar-links_container-item{
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: capitalize;
-    margin: 0 1rem;
-    cursor: pointer;
-    white-space: nowrap;
-    text-align: center;
+
+@media screen and (max-width: 500px) {
+  .navbar-item{
+    display: block; 
+    font-size: 40%;
+    border-radius: 30px;
+    margin-top: 4%;
+    margin-right: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+  
+  }
+
+    .coin_img{
+    width: 13px;
+    margin-left: 5px;
+  }
+
+
+  
 }
-.navbar-sign button{
-    padding: 0.3rem 0.8rem;
-    color: #fff;
-    background: linear-gradient(45deg,  #2A265F,  #67639b);
-   
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 25px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
-    flex-direction: column;
-    white-space: nowrap;
-    text-align: center;
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 860px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .navbar-item{
+        display: none;
+    }
+    .topnav.responsive #logout{
+        display: block;
+    }
+
+    .topnav.responsive .navbar-links_container-item  {
+        
+        padding: 14px 50px;
+        
+      }
+
+    .topnav.responsive #logout-btn{
+        margin-bottom: 10%;
+        text-align: center;
+        
+    }
+
+    .topnav.responsive #logout{
+        margin-bottom: 5%;
+        padding-top: 5%;
+        
+        
+    }
 }
-.current-score {
-	background-color: white;
-	margin-right: 5%;
-	height: 20%;
-	width: 180px;
-	padding: 0 3%;
-	border-radius: 30px;
-}
-.reward-coin{
-    width: 20px;
-    float: right;
-    padding: 0;
-    padding-top: 13%;
-}
-.current-score-amount{
-    float: left;
-}
-/* Navigation End */
+
+
+/* Navigation Bar End */
+
 
 
 /* Search Wrap */
@@ -112,7 +205,7 @@ a{
     flex-direction: row;
     height: 7vh;
     align-items: center;
-    margin-left: 7.8%;
+    margin-left: 7.7%;
     width: 41%;
     margin-bottom: 5vh;
     /* background-color: red; */
@@ -122,6 +215,29 @@ a{
     margin: 0;
     width: 21vw;
     margin-right: 7vw;
+}
+.search_wrap .search_course input::placeholder{
+    font-size: 1rem;
+}
+
+@media (max-width:570px){
+    .search_wrap .search_course{
+        width: 28vw; 
+        height: 4vh;
+    }
+    .search_wrap .search_course input::placeholder{
+        font-size: .8rem;
+    }
+    .search_wrap .dropdown{
+        width: 19vw;
+    }
+    .search_wrap .dropdown {
+        font-size: .9rem;
+    }
+    .search_wrap{
+        margin-bottom: 2vh;
+    }
+    
 }
 /* Search Wrap End */
 
@@ -196,7 +312,7 @@ a{
     height: 4vh;
     border-radius: 30px;
     padding: 0 3%;
-    width: 35%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -204,11 +320,11 @@ a{
 }
 .reward p{
     font-size: .64rem;
-    margin-right: 2vw;
-    margin-top: 2.5vh;
+
 }
 .reward img{
     width: 1.5vw;
+    margin-left: 10%;
 }
 .button{
 	background-color: #2A265F;
@@ -222,9 +338,59 @@ a{
 	letter-spacing: 1px;
     text-decoration: none;
 }
+
+.reward-amount{
+    margin-bottom: 0;
+}
+
+@media (max-width:570px){
+    .courseCard .course .course-preview h6{
+        font-size: .5rem;
+        margin-bottom: 3vh;
+    } 
+    .courseCard .course .course-preview h2{
+        font-size: 1rem;
+    }
+    .courseCard{
+        margin-right: 1vw;
+        width: 93.5vw !important;
+        
+    }
+    .description-text{
+        margin-bottom: 8vh;
+    }
+    .course-info h6{
+        margin-bottom: 2vh;
+    }
+    .reward{
+        width: 15vw;
+        /* margin-right: 20vw; */
+        height: 3vh;
+        border-radius: 15px;
+    }
+    .reward p{
+        font-size: .55rem;
+    }
+    .reward img{
+    
+    }
+    .course-info .button{
+        width: 20vw;
+        height: 3vh;
+        font-size: .55rem;
+    }
+    .reward img{
+        width: 2vw;
+        margin-left: 5%;
+    }
+    
+
+}
 /* Course Grid End */
 
 
+
+ 
 /* Footer */
 #footer {
 	margin-top:10% ;
@@ -235,10 +401,12 @@ a{
     width: 100%;
     background-color: #3175DE;
     padding-left: 20px;
-	
+	padding-bottom: 3%;
+    padding-top: 3%;
     color: white;
 
 }
+
 .footer-btn-container{
     display: flex;
     flex-direction: row;
@@ -249,11 +417,13 @@ a{
 
     margin-bottom: 3rem;
 }
+
 .footer-heading h1 {
     font-weight: 800;
     font-size: 64px;
     line-height: 75px;
 }
+
 .footer-btn {
     display: flex;
     align-items: center;
@@ -265,12 +435,14 @@ a{
     margin-bottom: 10rem;
     cursor: pointer;
 }
+
 .footer-btn p {
     font-size: 18px;
     line-height: 21px;
     color: #fff;
     word-spacing: 2px;
 }
+
 .footer-links {
     display: flex;
     justify-content: space-between;
@@ -281,32 +453,38 @@ a{
     width: 100%;
     text-align: left;
 }
+
 .footer-links div {
     width: 250px;
     margin: 1rem;
 }
+
 .footer-links_logo {
     display: flex;
     flex-direction: column;
     
 }
+
 .footer-links_logo img {
     width: 118px;
     height: 30px;
 
     margin-bottom: 1rem;
 }
+
 .footer-links_logo p {
     font-family: var(--font-family);
     font-size: 12px;
     line-height: 15px;
     color: #fff;
 }
+
 .footer-links_div {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
+
 .footer-links_div h4 {
     font-size: 14px;
     line-height: 17px;
@@ -315,6 +493,7 @@ a{
 
     margin-bottom: 0.9rem;
 }
+
 .footer-links_div p {
     font-size: 12px;
     line-height: 15px;
@@ -324,11 +503,13 @@ a{
     margin: 0.5rem 0;
     cursor: pointer;
 }
+
 .footer-copyright {
     margin-top: 2rem;
     text-align: center;
     width: 100%;
 }
+
 .footer-copyright p {
     font-size: 12px;
     font-family: var(--font-family);
@@ -336,13 +517,3 @@ a{
     color: #fff;
 }
 /* Footer End */
-
-.courseCard{
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-    /* background-color: #3175DE; */
-    /* border-width: 4px; */
-    border-color: aliceblue;
-    position: relative;
-    /* border-style: solid;  */
-}
