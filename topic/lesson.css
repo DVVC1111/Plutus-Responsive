@@ -317,6 +317,7 @@ body{
     flex-direction: row;
     align-items: center;
     margin-right: 8vw;
+    margin-bottom:10px;
 }
 .reward p{
     font-size: .64rem;
@@ -363,7 +364,7 @@ body{
         margin-bottom: 2vh;
     }
     .reward{
-        width: 15vw;
+        width: 25vw;
         /* margin-right: 20vw; */
         height: 3vh;
         border-radius: 15px;
@@ -371,8 +372,7 @@ body{
     .reward p{
         font-size: .55rem;
     }
-    .reward img{
-    
+   
     }
     .course-info .button{
         width: 20vw;
