@@ -317,7 +317,7 @@ body{
     flex-direction: row;
     align-items: center;
     margin-right: 8vw;
-    margin-bottom:10px;
+    margin-bottom: 7px;
 }
 .reward p{
     font-size: .64rem;
@@ -372,20 +372,21 @@ body{
     .reward p{
         font-size: .55rem;
     }
-   
-    }
+
     .course-info .button{
         width: 20vw;
         height: 3vh;
         font-size: .55rem;
     }
     .reward img{
-        width: 2vw;
+        width: 4vw;
         margin-left: 5%;
     }
+   
+    }
+   
     
 
-}
 /* Course Grid End */
 
 
